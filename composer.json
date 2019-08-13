@@ -1,0 +1,17 @@
+{
+    "require": {
+        "hhvm/hsl": "^4.10",
+        "hhvm/hhvm-autoload": "^2.0"
+    },
+    "require-dev": {
+        "hhvm/hhast": "^4.15",
+        "hhvm/hacktest": "^1.6",
+        "facebook/fbexpect": "^2.6"
+    },
+    "scripts": {
+        "linter": "hh_client ./src/*",
+        "lint": "vendor/bin/hhast-lint",
+        "fmt": "hackfmt ./src/* -i",
+        "reload": "composer dumpauto -o"
+    }
+}
