@@ -11,7 +11,8 @@
     "scripts": {
         "linter": "hh_client ./src/*",
         "lint": "vendor/bin/hhast-lint",
-        "fmt": "hackfmt ./src/* -i",
-        "reload": "composer dumpauto -o"
+        "fmt": "hackfmt ./src/* -i && hackfmt ./tests/* -i && hackfmt ./bin/* -i",
+        "reload": "composer dumpauto -o",
+        "test": "vendor/bin/hacktest ./tests"
     }
 }
